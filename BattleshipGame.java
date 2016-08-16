@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class BattleshipGame {
 
@@ -11,6 +12,7 @@ class BattleshipGame {
     Battleship battleship = new Battleship();
     battleship.setLocationCells();
 
+    System.out.println("The battleship has been placed.");
     System.out.println("What is your first guess?");
 
     battleship.checkGuess();
