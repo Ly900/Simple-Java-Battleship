@@ -1,11 +1,15 @@
 class Battleship {
 
-  public static void main(String [] args) {
+  private int[] locationCells;
 
-    System.out.println("Let's play Battleship!");
-    System.out.println("The ship stretches across 3 cells in a row with cells 0-7.");
-    System.out.println("Make guesses one cell at a time to try to sink the ship!");
+  public void setLocationCells() {
+    
+  }
 
+  public void checkGuess() {
+    String userGuessString = System.console().readLine();
+    int userGuess = Integer.parseInt(userGuessString);
+    System.out.println("Your guess was " + userGuess);
   }
 
 }
