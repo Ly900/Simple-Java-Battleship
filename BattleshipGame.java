@@ -16,7 +16,6 @@ class BattleshipGame {
     int[] locationCellsArray = {firstCell, firstCell + 1, firstCell + 2};
     battleship.setLocationCells(locationCellsArray);
     String stringArray = Arrays.toString(locationCellsArray);
-    System.out.println("Random, secret location of battleship: " + stringArray);
 
     System.out.println("The battleship has been placed.");
     System.out.println("What is your first guess?");
