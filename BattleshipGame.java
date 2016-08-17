@@ -10,11 +10,10 @@ class BattleshipGame {
     System.out.println("Make guesses one cell at a time to try to sink the ship!");
 
     Battleship battleship = new Battleship();
-    boolean isSunk = false;
 
     // Randomly chooses an integer between 0-4 and creates three consecutive cells for battleship
     int firstCell = (int) (Math.random() * 6);
-    int[] locationCellsArray = new int[] {firstCell, firstCell + 1, firstCell + 2};
+    int[] locationCellsArray = {firstCell, firstCell + 1, firstCell + 2};
     battleship.setLocationCells(locationCellsArray);
     String stringArray = Arrays.toString(locationCellsArray);
     System.out.println("Random, secret location of battleship: " + stringArray);
