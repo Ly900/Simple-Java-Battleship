@@ -5,6 +5,6 @@
 1. Fork and/or clone repo.
 2. Run in command line:
 
-> javac BattleshipGame.java && java BattleshipGame
+> java BattleshipGame
 
 3. Play.
