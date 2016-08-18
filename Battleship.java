@@ -19,20 +19,18 @@ class Battleship {
       String result = "Miss.";
       Scanner sc = new Scanner(System.in);
       int userGuess = sc.nextInt();
-      // String userGuessString = System.console().readLine();
-      // int userGuess = Integer.parseInt(userGuessString);
 
-      numGuesses++;
+        numGuesses++;
 
-      for (int cell : locationCells) {
-        if (userGuess == cell) {
-          result = "Hit!";
-          numHits++;
-          break;
+        for (int cell : locationCells) {
+          if (userGuess == cell) {
+            result = "Hit!";
+            numHits++;
+            break;
+          }
         }
-      }
 
-      System.out.println(result);
+        System.out.println(result);
 
       if (numHits == 3) {
         System.out.println("Congrats! You've sunk the ship! It took you " + numGuesses + " guesses.");
