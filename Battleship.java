@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Arrays;
 
 class Battleship {
@@ -16,8 +17,10 @@ class Battleship {
 
     while (isFloating) {
       String result = "Miss.";
-      String userGuessString = System.console().readLine();
-      int userGuess = Integer.parseInt(userGuessString);
+      Scanner sc = new Scanner(System.in);
+      int userGuess = sc.nextInt();
+      // String userGuessString = System.console().readLine();
+      // int userGuess = Integer.parseInt(userGuessString);
 
       numGuesses++;
 

@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.Arrays;
 
 class BattleshipGame {
@@ -14,9 +13,9 @@ class BattleshipGame {
     // Randomly chooses an integer between 0-4 and creates three consecutive cells for battleship
     int firstCell = (int) (Math.random() * 6);
     int[] locationCellsArray = {firstCell, firstCell + 1, firstCell + 2};
-    battleship.setLocationCells(locationCellsArray);
-    String stringArray = Arrays.toString(locationCellsArray);
+    String arrayAsString = Arrays.toString(locationCellsArray);
 
+    battleship.setLocationCells(locationCellsArray);
     System.out.println("The battleship has been placed.");
     System.out.println("What is your first guess?");
 
